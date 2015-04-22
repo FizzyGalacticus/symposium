@@ -1,0 +1,24 @@
+body {
+	background-color: #23A298;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+#container {
+	background-color: #10206B;
+	width: 95%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 25px;
+}
+
+#beginPresentation {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
