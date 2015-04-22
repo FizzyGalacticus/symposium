@@ -9,27 +9,17 @@ body {
 
 a {
 	text-decoration: none;
-	color: black;
-	display: block;
-	font-size: 50px;
 }
 
 #container {
-	background-color: #FFD041;
+	background-color: #55BBBC;
 	width: 95%;
-	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 25px;
 }
 
-#beginPresentation {
-	position: fixed;
-	z-index: 100;
-	top: 50%;
-	left: 50%;
-	margin: -100px 0 0 -100px;
-	width: 200px;
-	height: 200px;
+#container h1 {
+	margin: auto;
 	text-align: center;
 }
