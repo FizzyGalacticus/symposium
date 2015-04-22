@@ -28,6 +28,14 @@ a {
 	width: 95%;
 	height: 1px;
 	margin: auto;
-	background-color: #333;
+	background-color: #008BBA;
 	border-radius: 25px;
+}
+
+#introimage1, intoimage2 {
+	margin: auto;
+}
+
+.introimage {
+	height: 100px;
 }
