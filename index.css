@@ -32,10 +32,22 @@ a {
 	border-radius: 25px;
 }
 
-#introimage1, intoimage2 {
+#introimage1, #introimage2 {
 	margin: auto;
 }
 
 .introimage {
 	height: 100px;
+}
+
+#footer {
+	height: 15px;
+	width: 95%;
+	background-color: black;
+	margin: auto;
+}
+
+#copyright {
+	color: white;
+	text-align: right;
 }
