@@ -3,11 +3,6 @@
 		http://www.dtelepathy.com/blog/inspiration/beautiful-color-palettes-for-your-next-web-project
 */
 
-body, h1, h2, h3, h4, h5, h6, ul, li {
-	margin: 0px;
-	padding: 0px;
-}
-
 body {
 	background-color: #1352a2;
 }
@@ -65,21 +60,6 @@ ul {
 	margin: auto;
 }
 
-.spacer {
-	margin: auto;
-}
-
-#footer {
-	height: 20px;
-	width: 95%;
-	background-color: black;
-	margin: auto;
-}
-
-.mainPresentation {
-	color: #ededea;
-}
-
 #introvideo {
 	height: 200px;
 	padding: 20px;
@@ -97,35 +77,28 @@ ul {
 	justify-content: center;
 }
 
-.topic {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	
-	flex-flow: row nowrap;
-	-moz-flex-flow: row nowrap;
-	-webkit-flex-flow: row nowrap;
-	justify-content: center;
-	
-	padding: 15px;
-	list-style-type: none;
+.spacer {
+	margin: auto;
 }
 
-.subtopic {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
+.main {
 	display: flex;
-	
-	flex-flow: row nowrap;
-	-moz-flex-flow: row nowrap;
-	-webkit-flex-flow: row nowrap;
-	
-	justify-content: center;
-	padding: 5px;
+}
+
+.topicPicture {
+	margin: auto;
+}
+
+.topic {
+	margin: auto;
+	color: #ededea;
+}
+
+#footer {
+	height: 20px;
+	width: 95%;
+	background-color: black;
+	margin: auto;
 }
 
 #copyright {
