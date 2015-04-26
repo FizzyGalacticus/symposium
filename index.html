@@ -206,4 +206,30 @@ Symposium presentation website.
 			</div>
 		</div>
 	</body>
+	
+	<script type="text/javascript">
+		window.onkeydown = function(e) {
+			var keycode;
+			var currentPos = 1;
+			
+			if(window.event)
+				keycode = window.event.keyCode;
+			else if(e)
+				keycode = e.which;
+			
+			if(keycode === 39) //Right
+			{
+				return true;
+			}
+			else if(keycode === 37) //Left
+			{
+			
+			}
+			else
+			{
+				return false;
+			}
+		};
+	</script>
+	
 </html>
