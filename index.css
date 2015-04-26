@@ -115,10 +115,10 @@ ul {
 	display: flex;
 }
 
-.subtopic {}
-	flex: 1;
+.subtopic {
+	
 }
 
 .topicPicture {
-	flex: 1;
+	
 }
