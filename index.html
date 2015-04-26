@@ -207,10 +207,11 @@ Symposium presentation website.
 		</div>
 	</body>
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
+		var currentPos = 0;
 		window.onkeydown = function(e) {
 			var keycode;
-			var currentPos = 1;
 			
 			if(window.event)
 				keycode = window.event.keyCode;
@@ -219,11 +220,35 @@ Symposium presentation website.
 			
 			if(keycode === 39) //Right
 			{
+				if(currentPos != 3) currentPos += 1;
+				
+				if(currentPos >= 1)
+				{
+					$('html,body').animate({
+						scrollTop: $(".topic"+currentPos).offset().top
+					}, 'slow');
+				}
+				
 				return true;
 			}
 			else if(keycode === 37) //Left
 			{
-			
+				if(currentPos != 0) currentPos -= 1;
+				
+				if(currentPos === 0)
+				{
+					$('html,body').animate({
+						scrollTop: $("#intro").offset().top
+					}, 'slow');
+				}
+				else
+				{
+					$('html,body').animate({
+						scrollTop: $(".topic"+currentPos).offset().top
+					}, 'slow');
+				}
+				
+				return true;
 			}
 			else
 			{
