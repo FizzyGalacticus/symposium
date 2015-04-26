@@ -4,7 +4,7 @@
 */
 
 body {
-	background-color: #1352a2;
+	background-color: #1352A2;
 }
 
 a {
@@ -33,9 +33,9 @@ ul {
 
 #separator {
 	width: 95%;
-	height: 1px;
+	height: 10px;
 	margin: auto;
-	background-color: #008BBA;
+	background-color: #1352A2;
 	border-radius: 25px;
 }
 
