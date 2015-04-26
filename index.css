@@ -111,6 +111,10 @@ ul {
 }
 
 /*			Flexbox stuff			*/
+.main {
+	
+}
+
 .topic {
 	display: flex;
 }
@@ -120,5 +124,5 @@ ul {
 }
 
 .topicPicture {
-	
+	order: 1;
 }
