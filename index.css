@@ -89,6 +89,15 @@ ul {
 	margin: auto;
 }
 
+#introtext {
+	margin: auto;
+}
+
+#introquote {
+	margin: auto;
+	width: 50%
+}
+
 .topic {
 	margin: auto;
 	color: #ededea;
