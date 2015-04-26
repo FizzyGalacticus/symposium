@@ -16,6 +16,10 @@ ul {
 	list-style-type: none;
 }
 
+h2 {
+	text-decoration: underline;
+}
+
 #container {
 	background-color: #db3340;
 	width: 95%;
@@ -28,7 +32,7 @@ ul {
 }
 
 #container h1 {
-	margin: auto;
+	margin: 10px;
 	text-align: center;
 }
 
@@ -115,7 +119,7 @@ ul {
 #footer {
 	height: 20px;
 	width: 95%;
-	background-color: black;
+	background-color: #1352A2;
 	margin: auto;
 }
 
