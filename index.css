@@ -82,16 +82,20 @@ ul {
 }
 
 .main {
-	display: flex;
-}
-
-.topicPicture {
-	margin: auto;
+	
 }
 
 .topic {
 	margin: auto;
 	color: #ededea;
+}
+
+.subtopic {
+	margin: auto;
+}
+
+.topicPicture {
+	margin: auto;
 }
 
 #footer {
@@ -104,4 +108,17 @@ ul {
 #copyright {
 	color: white;
 	text-align: right;
+}
+
+/*			Flexbox stuff			*/
+.topic {
+	display: flex;
+}
+
+.subtopic {}
+	flex: 1;
+}
+
+.topicPicture {
+	flex: 1;
 }
