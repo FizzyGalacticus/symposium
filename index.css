@@ -9,6 +9,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: #EDEDEA;
 }
 
 ul {
@@ -23,7 +24,7 @@ ul {
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
 	
-	color: #ededea;
+	color: #EDEDEA;
 }
 
 #container h1 {
