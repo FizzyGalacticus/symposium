@@ -68,6 +68,10 @@ Symposium presentation website.
 				
 				<div id="separator"></div>
 				
+				<div class="topicSpace"></div>
+				
+				<div id="separator"></div>
+				
 				<div class="topic topic1" id="part2">
 					<div class="subtopic">
 						<ul class="topicList">
@@ -264,6 +268,14 @@ Symposium presentation website.
 				return false;
 			}
 		};
+		
+		var styleString = "height: " + window.innerHeight + "px;";	
+		var topicSpaces = document.getElementsByClassName("topicSpace");
+		
+		for(var i = 0; i < topicSpaces.length; i++)
+		{
+		   topicSpaces[i].setAttribute("style",styleString);
+		}
 	</script>
 	
 </html>
