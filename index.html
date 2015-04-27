@@ -227,6 +227,13 @@ Symposium presentation website.
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
 		var currentPos = 1; //Variable to keep track of current position
+		
+		function moveToPart(position) {
+			$('html,body').animate({
+				scrollTop: $("#part"+position).offset().top
+			}, 'slow');
+		}
+		
 		window.onkeydown = function(e) {
 			
 			if(window.event)
@@ -239,9 +246,7 @@ Symposium presentation website.
 				//If we have not reached the last 'part'
 				if(currentPos != 4) currentPos += 1;
 				
-				$('html,body').animate({
-					scrollTop: $("#part"+currentPos).offset().top
-				}, 'slow');
+				moveToPart(currentPos);
 				
 				return true;
 			}
@@ -250,9 +255,7 @@ Symposium presentation website.
 				//If we have not yet reached the beginning again
 				if(currentPos != 1) currentPos -= 1;
 				
-				$('html,body').animate({
-					scrollTop: $("#part"+currentPos).offset().top
-				}, 'slow');
+				moveToPart(currentPos);
 				
 				return true;
 			}
