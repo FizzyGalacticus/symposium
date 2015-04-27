@@ -226,7 +226,7 @@ Symposium presentation website.
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">
-		var currentPos = 0; //Variable to keep track of current position
+		var currentPos = 1; //Variable to keep track of current position
 		window.onkeydown = function(e) {
 			
 			if(window.event)
@@ -236,33 +236,23 @@ Symposium presentation website.
 			
 			if(keycode === 39) //Right
 			{
-				if(currentPos != 3) currentPos += 1;
+				//If we have not reached the last 'part'
+				if(currentPos != 4) currentPos += 1;
 				
-				if(currentPos >= 1)
-				{
-					$('html,body').animate({
-						scrollTop: $(".topic"+currentPos).offset().top
-					}, 'slow');
-				}
+				$('html,body').animate({
+					scrollTop: $("#part"+currentPos).offset().top
+				}, 'slow');
 				
 				return true;
 			}
 			else if(keycode === 37) //Left
 			{
-				if(currentPos != 0) currentPos -= 1;
+				//If we have not yet reached the beginning again
+				if(currentPos != 1) currentPos -= 1;
 				
-				if(currentPos === 0)
-				{
-					$('html,body').animate({
-						scrollTop: $("#intro").offset().top
-					}, 'slow');
-				}
-				else
-				{
-					$('html,body').animate({
-						scrollTop: $(".topic"+currentPos).offset().top
-					}, 'slow');
-				}
+				$('html,body').animate({
+					scrollTop: $("#part"+currentPos).offset().top
+				}, 'slow');
 				
 				return true;
 			}
