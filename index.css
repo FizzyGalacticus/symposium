@@ -44,7 +44,7 @@ h2 {
 	border-radius: 25px;
 }
 
-.imagedisplay {
+.imagedisplay{
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
@@ -67,7 +67,6 @@ h2 {
 
 #introvideo {
 	height: 200px;
-	padding: 20px;
 	margin: auto;
 	
 	display: -webkit-box;
@@ -106,6 +105,10 @@ h2 {
 .topic {
 	margin: auto;
 	color: #ededea;
+}
+
+.topic ul {
+	font-size: 25px;
 }
 
 .subtopic {
