@@ -242,6 +242,9 @@ Symposium presentation website.
 	<script type="text/javascript">
 		var currentPos = 1; //Variable to keep track of current position
 		var numberOfParts = 7;
+		var keystrokes = "";
+		var styleString = "height: " + window.innerHeight + "px;";	
+		var topicSpaces = document.getElementsByClassName("topicSpace");
 		
 		function moveToPart(position) {
 			$('html,body').animate({
@@ -276,12 +279,22 @@ Symposium presentation website.
 			}
 			else
 			{
-				return false;
+				var keytyped = String.fromCharCode(e.which);
+				
+				keystrokes = keystrokes + keytyped;
+				if(keystrokes.length > 5) {
+					keystrokes = keystrokes.substring(1,7);
+				}
+
+				if(keystrokes == "reset" || keystrokes == "RESET") {
+					currentPos = 1;
+					moveToPart(currentPos);
+					return true;
+				}
 			}
+			
+			return false;
 		};
-		
-		var styleString = "height: " + window.innerHeight + "px;";	
-		var topicSpaces = document.getElementsByClassName("topicSpace");
 		
 		for(var i = 0; i < topicSpaces.length; i++)
 		{
