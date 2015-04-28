@@ -108,6 +108,10 @@ h2 {
 	color: #ededea;
 }
 
+.topic .subtopic ul ul {
+	max-width: 600px;
+}
+
 .subtopic {
 	margin: auto;
 }
