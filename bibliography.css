@@ -21,3 +21,25 @@ a {
 #title {
 	text-align: center;
 }
+
+#titleSeparator {
+	width: 95%;
+	height: 10px;
+	margin: auto;
+	background-color: #1352A2;
+	border-radius: 25px;
+}
+
+#separator {
+	width: 95%;
+	height: 1px;
+	margin: auto;
+	background-color: #1352A2;
+	border-radius: 25px;
+}
+
+.bibliography {
+	text-align: center;
+	font-size: 25px;
+	margin: 25px;
+}
