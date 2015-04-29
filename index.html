@@ -364,6 +364,7 @@ Symposium presentation website.
 		var keystrokes = "";
 		var styleString = "height: " + window.innerHeight + "px;";	
 		var topicSpaces = document.getElementsByClassName("topicSpace");
+		var topicClasses = document.getElementsByClassName("topic");
 		
 		function moveToPart(position) {
 			$('html,body').animate({
@@ -418,6 +419,11 @@ Symposium presentation website.
 		for(var i = 0; i < topicSpaces.length; i++)
 		{
 		   topicSpaces[i].setAttribute("style",styleString);
+		}
+		
+		for(var i = 0; i < topicClasses.length; i++)
+		{
+		   topicClasses[i].setAttribute("style",styleString);
 		}
 	</script>
 	
