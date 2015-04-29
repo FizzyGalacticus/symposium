@@ -125,11 +125,17 @@ h2 {
 	width: 95%;
 	background-color: #1352A2;
 	margin: auto;
+	color: white;
+}
+
+#bibliography {
+	text-align: left;
+	margin-right: auto;
 }
 
 #copyright {
-	color: white;
 	text-align: right;
+	margin-left: auto;
 }
 
 /*			Flexbox stuff			*/
@@ -161,4 +167,14 @@ h2 {
 
 .topicPicture {
 	order: 1;
+}
+
+#footer {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	
+	justify-content: space-between;
 }
